@@ -1,0 +1,334 @@
+/*** UNIVERSAL STYLES ***/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #6acaf1;
+    margin: 0 0 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+/*** CONTACT FORM GLOBAL ***/
+.contact-wrap {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+input {
+    height: 35px;
+    margin: 3px 0 20px;
+    padding: 0 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid #0f2129;
+}
+
+select {
+    height: 35px;
+    margin-top: 3px;
+    padding: 0 10px;
+}
+
+select:focus {
+    outline: none;
+    border: 1.5px solid #0f2129;
+}
+
+.contact-form .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    height: 50px;
+    background-color: #6acaf1;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.contact-form .button:hover {
+    background-color: #5fb3d4
+}
+
+/*** MOBILE STYLE ***/
+.nav-wrap {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    margin-left: auto;
+    z-index: 100;
+}
+
+.hamburger-menu .line {
+    width: 35px;
+    height: 6px;
+    margin: 6px 0;
+    background-color: #6acaf1;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 320px;
+    position: fixed;        
+    top: 0;
+    right: 0;
+    background-color: #0f2129;
+    transform: translateX(100vw);
+    transition: all .3s;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 90px 90px 0 0;
+}
+
+.mobile-nav ul li {
+    padding: 10px 0;
+}
+
+.mobile-nav ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.welcome-wrap {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../images/tournament-1.jpg');
+    -webkit-animation: slider ease-in-out 18s both infinite;
+    -moz-animation: slider ease-in-out 18s both infinite;
+    animation: slider ease-in-out 18s both infinite;
+}
+
+.welcome h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.welcome span {
+    color: #6acaf1;
+}
+
+.info-wrap {
+    display: flex;
+    padding: 20px;
+}
+
+/*** CONTACT PAGE MOBILE ***/
+.contact-wrap {        
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*** FOOTER PAGE MOBILE ***/
+.footer-wrap {
+    width: 100vw;
+    display: flex;
+    background-color: #4d4d4d;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.foot-left .logo {
+    width: 125px;
+}
+
+/*** DESKTOP STYLE ***/
+@media only screen and (min-width: 800px) {
+    .nav-wrap {
+        width: 100%;
+        display: flex;
+    }
+
+    .nav {
+        width: 1250px;
+    }
+
+    .desktop-nav {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .desktop-nav ul li {
+        display: inline;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    .desktop-nav ul li a {
+        color: #0f2129;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .desktop-nav ul li a:hover {
+        color: #6acaf1;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .welcome-wrap {
+        height: 650px;
+    }
+
+    .welcome {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .welcome h1 {
+        font-size: 5.5rem;
+    }
+
+    .info-wrap {
+        padding: 50px;
+    }
+
+    .info {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .info h2 {
+        font-size: 2.2rem;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
+
+    /*** CONTACT DESKTOP ***/
+    .contact-wrap {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    .contact {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact p {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .footer-wrap {
+        width: 100%;
+        display: flex;
+    }
+
+    footer.container {
+        width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foot-left .logo {
+        width: 150px;
+    }
+
+    .foot-right {
+        margin-left: auto;
+    }
+}
+
+
+/*** ANIMATING IMAGES ***/
+@keyframes slider {
+    0% {
+        background-image: url('../images/tournament-1.jpg');
+    }
+
+    33% {
+        background-image: url('../images/tournament-2.jpg');
+    }
+
+    66% {
+        background-image: url('../images/tournament-3.jpg');
+    }
+    
+    100% {
+        background-image: url('../images/tournament-1.jpg');
+    }
+}
